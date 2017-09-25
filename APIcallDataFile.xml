@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Header>
+    <Use_Case_Name>ProcessBarcode_Post</Use_Case_Name>
+  </Header>	        
+	<TestCase>
+		<Method>POST</Method>
+ 		<Uri>ProcessBarcode</Uri>
+		<Root>/RevPlusCheckout/api/</Root>
+		<ValidationText></ValidationText>
+ 	</TestCase>

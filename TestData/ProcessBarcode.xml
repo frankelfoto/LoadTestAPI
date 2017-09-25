@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Header>
+    <API>ProcessBarcode</API>
+	<Autor>Eugene Frankel</Autor>
+  </Header>	        
+	<TestCase>
+		<Method>POST</Method>
+ 		<Uri>ProcessBarcode</Uri>
+		<Root>/RevPlusCheckout/api/</Root>
+		<ValidationText></ValidationText>
+ 	</TestCase>

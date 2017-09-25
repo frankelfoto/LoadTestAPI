@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F31FA9A3-8F52-4911-9DA4-B023FB107DD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RevPlusAPI</RootNamespace>
+    <AssemblyName>RevPlusAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TestProjectType>WebTest</TestProjectType>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.Client, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.Client.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth2.ClientAuthorization.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.LoadTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIcalls\ApiCall.cs" />
+    <Compile Include="APIcalls\RevPlusCheckout\PostCheckOutQuickFinalCheckoutCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetContainerPackingSummaryListCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetContainerPackingListCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetDeactivateContainerCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetDissolveContainerCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetCloseContainerCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetOpenContainerCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetProcessImmediateRemoveCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetProcessRemoveReturnCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\GetProcessRemoveCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\PostCreateContainerCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\PostProcessInboundScanCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetAllCustomersCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetAssetDownedByIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetAssetIdByBarcodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetAssetLocationIdByBarCodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetLocationInactiveValidationByLocationIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetLocationByIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetCategoryByParentCategoryCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetCustomerByIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetNoteTypesCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetNonBarcodeProductByBarcodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetCheckoutValidatoin_OTCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetQuickCheckoutErrorsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetQuickCheckoutNonErrorsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetQuickCheckoutUserIdStatusIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetQuickTransferOrderCategoryQuantitiesCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetOrderStatusFlowCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetProductByCategoryIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetProductCountByCategoryIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetOrderByIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetOrderHeaderByIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\01GetUserGroup_PagePro_AccessCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetUserProcedureAccessByUserIDCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetTransferOrderList_OrderIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetProductTransNonBarCodedByOrderIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetProductTransBarCodedByOrderIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetTransferNoteByTransferOrderIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetServerDateTimeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetViewAssetStatusCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetUserByCredentialsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetBarcodesToCheckout.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetProductTransMasterItemsToCheckInCoded.cs" />
+    <Compile Include="APIcalls\RevPlusContainer\PostProcessScanCoded.cs" />
+    <Compile Include="APIcalls\RevPlusReturn\PostProcessBarcodeSyncCoded.cs" />
+    <Compile Include="APIcalls\RevPlusUndo\PostUndoProcessBarcodeCoded.cs" />
+    <Compile Include="APIcalls\Service\GetEventCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetCheckoutHeaderDetailsCoded.cs" />
+    <Compile Include="APIcalls\Service\GetOAuthUserInfoCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetBarcodeValidationResultsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\PostGetOperationsDashboardByLocationsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\PostGetQuickTurnDashSelectCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetQuickCheckoutWithStatusMsgIdCoded.cs" />
+    <Compile Include="APIcalls\Service\GetOAuthLogoutCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetFastReturnWithStatusMsgIdCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetCategoryActiveSubCoded.cs" />
+    <Compile Include="APIcalls\RevPlusCheckout\PostCheckOutProcessBarcodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusReturn\PostProcessBarcodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusReturn\PostCheckInByBarcodeCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetScanTypesForCustomSetupCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetAllLocationsCoded.cs" />
+    <Compile Include="APIcalls\RevPlusData\GetPingconnectionCoded.cs" />
+    <Compile Include="helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VU_DataSource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VU_DataSource.dbml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Scenarious\LoadTestApiScenario.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VU_DataSource.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>VU_DataSource.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\json-serialize.js" />
+    <Content Include="Scripts\json-serialize.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VU_DataSource.dbml.layout">
+      <DependentUpon>VU_DataSource.dbml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

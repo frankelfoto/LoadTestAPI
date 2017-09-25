@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="GetPingconnection" Id="7e210a7e-cd23-46f6-ae66-4ceb9799f456" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="104a62cb-6fa1-4274-b746-f8407b1500af" Version="1.1" Url="{{WebServer1}}/RevPlusData/api/GetPingconnection" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Authorization" Value="Bearer 2ZGK4n92IsoP1jIXpTcGLlFMlhMKB3Zpt_jY3vsDJstu3YOIFuzCS6Hv9DKq7Ds7IXYmoh-5h6FhflLdK2y8degfouIyoRV17Zsh0cuQTW7wpVZQ4n18xhsDKXbwGYvU1yXY2XwCR7srCiqEeFlfnVSiuVZBF2t7hdfcn6rH2Nch31LVmM55OhMnDtlAMnVUKNVlYg3wMDlj7zWfqw4s0FMF5jkwtqwRqBoed_1Ggn2yhsQyIQGM114rgm3aCYoiwaaBnPDYbMnA5E6n29686M7Yfp0uVckb9e55fQVfwrz7Y5FF8bqmhuzIMiCTvJFT6X6b_rRUOL9D1ioT4W6Zly8O4qqHNf191PG6CkzsmpLCbQB0pwS4lNss2uF-HP4V6omsx04sWfw2e3M_qjhhF0gZ1gKWUf-UzIsfoaU6hT85_dYXX5aHq_fXM88KnAtAednICjEVeMHakY_rWfL9zcUDydI" />
+      </Headers>
+    </Request>
+  </Items>
+  <ContextParameters>
+    <ContextParameter Name="URI" Value="/RevPlusData/api/GetPingconnection" />
+    <ContextParameter Name="WebServer1" Value="https://qarevplus.ver.com" />
+  </ContextParameters>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+      <RuleParameters>
+        <RuleParameter Name="FindText" Value="Los Angeles Main" />
+        <RuleParameter Name="IgnoreCase" Value="False" />
+        <RuleParameter Name="UseRegularExpression" Value="False" />
+        <RuleParameter Name="PassIfTextFound" Value="True" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
